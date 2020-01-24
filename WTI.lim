@@ -1,0 +1,22 @@
+RESET $
+READ ; NOBS=355 ; NVAR=19 ; FILE=C:\USERS\ATIWARI7\DESKTOP\WTI.CSV ; 
+NAMES= SL, DATE,LAST,stock,X1,X2,C,D,E,F,G,H,I,J,K,L,M,X3,INT $ 
+SAMPLE ; 2-355 $ 
+DSTAT ; RHS=* $ 
+
+REGRESS ; LHS=LAST ; RHS =STOCK,X1,X2,C,D,E,F,G,H,I,J,K,L,M,X3,INT $  
+REGRESS ; LHS=LAST ; RHS =one,STOCK,X1,X2,C,D,E,I,J,X3,INT $  
+
+END    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
